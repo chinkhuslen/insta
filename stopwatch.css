@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 2.6em;
+}
+.mode, #sun, #moon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+.deesheldeg{
+    transform: translateY(-300px);
+    transition: all 1s ease;
+    animation: deeshee 1s ease;
+}
+.doosholdog{
+    transform: translateY(0px);
+    transition: all 1s ease;
+    animation: dooshoo 1s ease;
+}
+.day {
+    transition: all 0.3s ease;
+  background: #87cefa;
+}
+.wrapper {
+  padding-top: 50px;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gold {
+  color: yellow;
+  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange,
+    0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange;
+}
+.white{
+    transition: all 0.3s ease;
+    color: white;
+}
+.silver {
+    color: white;
+  text-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver,
+    0 0 40px silver, 0 0 50px silver, 0 0 60px silver, 0 0 70px silver;
+}
+.night {
+    transition: all 0.3s ease;
+  color: white;
+  background: #08113b;
+}
+#circle {
+    z-index: -1;
+  font-size: 4.6rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.circle-day {
+  box-shadow: 0 0 100px 20px gold, inset 0 0 100px 20px gold;
+}
+.circle-night {
+  box-shadow: 0 0 100px 20px silver, inset 0 0 100px 20px silver;
+}
+.time {
+  width: 70%;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: inherit;
+}
+.reset {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid lightgreen;
+}
+.start-stop,
+#button-start,
+#button-stop {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.start-stop {
+  padding: 5px;
+}
+#button-start,
+#button-stop {
+  border: none;
+}
+#button-start {
+  border: 2px solid green;
+}
+#button-stop {
+  border: 2px solid red;
+}
+#button-start:hover {
+  transition: all ease 0.3s;
+  background-color: green;
+  color: white;
+}
+#button-stop:hover {
+  transition: all ease 0.3s;
+  background-color: red;
+  color: white;
+}
+.reset:hover {
+  color: white;
+  transition: all ease 0.3s;
+  background-color: lightgreen;
+}
+.off {
+  display: none;
+}
+.on {
+  display: block;
+}
+@keyframes deeshee {
+    to{
+        translateY(-100px);
+    }
+}
+@keyframes dooshoo {
+    to{
+        translateY(0px);
+    }
+}
