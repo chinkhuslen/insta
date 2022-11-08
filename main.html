@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./mainStyle.css" />
+  <script src="https://kit.fontawesome.com/07be24ad80.js" crossorigin="anonymous"></script>
+  <title>Instagram</title>
+</head>
+
+<body>
+  <div class="navbar center">
+    <nav class="container flexrow spcebtwn" style="padding: 0 20px">
+      <!-- logo -->
+      <div class="width33">
+        <img src="./insta.png" style="width: 103px; height: 29px" />
+      </div>
+      <!-- search -->
+      <div class="width33" id="search">
+        <input type="text" placeholder="Search" id="srch" />
+      </div>
+      <!-- nav -->
+      <div class="width33 center">
+        <div class="icons center flexrow">
+          <div>
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+          </div>
+
+          <div>
+            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+          </div>
+
+          <div>
+            <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+          </div>
+
+          <div>
+            <a href="#"><i class="fa-regular fa-compass"></i></a>
+          </div>
+
+          <div>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+          </div>
+          <div>
+            <div class="profile">
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="./profile.html" class="flexrow">
+                    <div><i class="fa-regular fa-user subic"></i></div>
+                    <div>Profile</div>
+                  </li>
+                  <li>
+                    <a href="" class="flexrow">
+                    <div><i class="fa-regular fa-bookmark subic"></i></div>
+                    <div>Saved</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="flexrow">
+                    <div><i class="fa-solid fa-gear subic"></i></div>
+                    <div>Settings</div>
+                  </a>
+                  </li>
+                  <li>
+                    <a href="" class="flexrow">
+                    <div><i class="fa-solid fa-repeat subic"></i></div>
+                    <div>Switch Account</div>
+                  </a>
+                  </li>
+                  <li class="center" style="border-top: #dbdbdb 1px solid;">
+                    <a href="login_page.html" class="flexrow">
+                    <div>Log Out</div>
+                  </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+    <div>
+      <!-- post -->
+      <div class="mncon fullwidth flexcol">
+        <!-- story -->
+        <div class="fullwidth" style="max-width: 620px">
+          <div class="border fullwidth">
+            <ul class="flexrow fullwidth">
+              <li class="width-165">
+                <div class="story center flexcol">
+                  <div class="storypic"></div>
+                  <div class="name">Name</div>
+                </div>
+              </li>
+              <li class="width-165">
+                <div class="story center flexcol">
+                  <div class="storypic"></div>
+                  <div class="name">Name</div>
+                </div>
+              </li>
+              <li class="width-165">
+                <div class="story center flexcol">
+                  <div class="storypic"></div>
+                  <div class="name">Name</div>
+                </div>
+              </li>
+              <li class="width-165">
+                <div class="story center flexcol">
+                  <div class="storypic"></div>
+                  <div class="name">Name</div>
+                </div>
+              </li>
+              <li class="width-165">
+                <div class="story center flexcol">
+                  <div class="storypic"></div>
+                  <div class="name">Name</div>
+                </div>
+              </li>
+              <li class="width-165">
+                <div class="story center flexcol">
+                  <div class="storypic"></div>
+                  <div class="name">Name</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- posts -->
+        <div class="fullwidth" style="max-width: 620px">
+          <div class="post fullwidth back border">
+            <!-- headr -->
+            <div class="flexrow spcebtwn" style="padding: 14px 16px">
+              <div class="flexrow">
+                <div class="postpic"></div>
+                <div class="name" style="margin-left: 10px">Name</div>
+              </div>
+              <div>
+                <button id="myBtn"><i class="center ic fa-solid fa-ellipsis"></i></button>
+                 <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content center flexcol spcebtwn" style="position: relative;">
+              <span style="position: absolute;top: 20px;
+              right: 20px;" class="close">&times;</span>
+              <div class="red">Report</div>
+              <div class="red">Unfollow</div>
+              <div>Go to post</div>
+              <div>Embed</div>
+              <div>Cancel</div>
+            </div>
+          </div>
+              </div>
+            </div>
+            <!-- pic -->
+            <div class="fullwidth">
+              <img src="./post5.jpeg" class="fullwidth" />
+            </div>
+            <!-- rec -->
+            <div class="flexrow spcebtwn" style="padding: 0 5px">
+              <div class="flexrow">
+                <div>
+                  <i onclick="myFunction(this,'heart')" class="ic fa fa-regular fa-heart"></i>
+                </div>
+                <div><i class="ic fa-regular fa-comment"></i></div>
+                <div><i class="ic fa-regular fa-paper-plane"></i></div>
+              </div>
+              <div>
+                <i onclick="myFunction(this,'bookmark')" class="ic fa fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <!-- com -->
+            <div>
+              <div>
+                <div class="center" style="padding:16px;justify-content:start;">
+                  <p></p>
+                  <span><b>Name</b> </span> No caption
+                  </p>
+                </div>
+              </div>
+              <div style="border-top:1px solid #dbdbdb;padding: 8px;">
+                <div class="flexrow">
+                  <i class="ic fa-regular fa-face-smile"></i>
+                  <input type="text" style="outline:none;" class="fullwidth center noborder"
+                    placeholder="Add comment...">
+                  <div class="name" style="color: #0095f6;">Post</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fullwidth" style="max-width: 620px">
+          <div class="post fullwidth back border">
+            <!-- headr -->
+            <div class="flexrow spcebtwn" style="padding: 14px 16px">
+              <div class="flexrow">
+                <div class="postpic"></div>
+                <div class="name" style="margin-left: 10px">Name</div>
+              </div>
+              <div>
+                <i class="center ic fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <!-- pic -->
+            <div class="fullwidth">
+              <img src="./post.jpeg" class="fullwidth" style="object-fit: cover;" />
+            </div>
+            <!-- rec -->
+            <div class="flexrow spcebtwn" style="padding: 0 5px">
+              <div class="flexrow">
+                <div>
+                  <i onclick="myFunction(this,'heart')" class="ic fa fa-regular fa-heart"></i>
+                </div>
+                <div><i class="ic fa-regular fa-comment"></i></div>
+                <div><i class="ic fa-regular fa-paper-plane"></i></div>
+              </div>
+              <div>
+                <i onclick="myFunction(this,'bookmark')" class="ic fa fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <!-- com -->
+            <div>
+              <div>
+                <div class="center" style="padding:16px;justify-content:start;">
+                  <p></p>
+                  <span><b>Name</b> </span> No caption
+                  </p>
+                </div>
+              </div>
+              <div style="border-top:1px solid #dbdbdb;padding: 8px;">
+                <div class="flexrow">
+                  <i class="ic fa-regular fa-face-smile"></i>
+                  <input type="text" style="outline:none;" class="fullwidth center noborder"
+                    placeholder="Add comment...">
+                  <div class="name" style="color: #0095f6;">Post</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fullwidth" style="max-width: 620px">
+          <div class="post fullwidth back border">
+            <!-- headr -->
+            <div class="flexrow spcebtwn" style="padding: 14px 16px">
+              <div class="flexrow">
+                <div class="postpic"></div>
+                <div class="name" style="margin-left: 10px">Name</div>
+              </div>
+              <div>
+                <i class="center ic fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <!-- pic -->
+            <div class="fullwidth">
+              <img src="./post.png" class="fullwidth" style="object-fit: cover;" />
+            </div>
+            <!-- rec -->
+            <div class="flexrow spcebtwn" style="padding: 0 5px">
+              <div class="flexrow">
+                <div>
+                  <i onclick="myFunction(this,'heart')" class="ic fa fa-regular fa-heart"></i>
+                </div>
+                <div><i class="ic fa-regular fa-comment"></i></div>
+                <div><i class="ic fa-regular fa-paper-plane"></i></div>
+              </div>
+              <div>
+                <i onclick="myFunction(this,'bookmark')" class="ic fa fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <!-- com -->
+            <div>
+              <div>
+                <div class="center" style="padding:16px;justify-content:start;">
+                  <p></p>
+                  <span><b>Name</b> </span> No caption
+                  </p>
+                </div>
+              </div>
+              <div style="border-top:1px solid #dbdbdb;padding: 8px;">
+                <div class="flexrow">
+                  <i class="ic fa-regular fa-face-smile"></i>
+                  <input type="text" style="outline:none;" class="fullwidth center noborder"
+                    placeholder="Add comment...">
+                  <div class="name" style="color: #0095f6;">Post</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fullwidth" style="max-width: 620px">
+          <div class="post fullwidth back border">
+            <!-- headr -->
+            <div class="flexrow spcebtwn" style="padding: 14px 16px">
+              <div class="flexrow">
+                <div class="postpic"></div>
+                <div class="name" style="margin-left: 10px">Name</div>
+              </div>
+              <div>
+                <i class="center ic fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <!-- pic -->
+            <div class="fullwidth">
+              <img src="./post2.jpeg" class="fullwidth" style="object-fit: cover;" />
+            </div>
+            <!-- rec -->
+            <div class="flexrow spcebtwn" style="padding: 0 5px">
+              <div class="flexrow">
+                <div>
+                  <i onclick="myFunction(this,'heart')" class="ic fa fa-regular fa-heart"></i>
+                </div>
+                <div><i class="ic fa-regular fa-comment"></i></div>
+                <div><i class="ic fa-regular fa-paper-plane"></i></div>
+              </div>
+              <div>
+                <i onclick="myFunction(this,'bookmark')" class="ic fa fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <!-- com -->
+            <div>
+              <div>
+                <div class="center" style="padding:16px;justify-content:start;">
+                  <p></p>
+                  <span><b>Name</b> </span> No caption
+                  </p>
+                </div>
+              </div>
+              <div style="border-top:1px solid #dbdbdb;padding: 8px;">
+                <div class="flexrow">
+                  <i class="ic fa-regular fa-face-smile"></i>
+                  <input type="text" style="outline:none;" class="fullwidth center noborder"
+                    placeholder="Add comment...">
+                  <div class="name" style="color: #0095f6;">Post</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar -->
+        <div class="sidebar ">
+          <div class="flexcol fullwidth" style="position: fixed; top:110px;max-width: 293px;">
+            <!-- profile -->
+          <div class="fullwidth flexrow spcebtwn center">
+            <div class="storypic"></div>
+            <div>Chinkhuslen</div>
+            <div><a href="#" style="color: #0095f6">Switch</a></div>
+          </div>
+          <!-- suggest -->
+          <div class="flexcol">
+            <div class="name" style="
+                  max-width: 100%;
+                  opacity: 0.6;
+                  font-weight: bold;
+                  color: gray;
+                  letter-spacing: 0.8px;
+                  margin-bottom: 10px;
+                ">
+              Suggestions For You
+            </div>
+            <div class="flexrow spcebtwn center suggestions">
+              <div class="storypic" style="width: 32px; height: 32px"></div>
+              <div>Name</div>
+              <div><span onclick="changeName(this)"><span id="fol" class="on" style="color: #0095f6">Follow</span><span id="req" class="off">Requested</span></span></div>
+            </div>
+            <div class="flexrow spcebtwn center suggestions">
+              <div class="storypic" style="width: 32px; height: 32px"></div>
+              <div>Name</div>
+              <div><span onclick="changeName(this)"><span id="fol" class="on" style="color: #0095f6">Follow</span><span id="req" class="off">Requested</span></span></div>
+            </div>
+            <div class="flexrow spcebtwn center suggestions">
+              <div class="storypic" style="width: 32px; height: 32px"></div>
+              <div>Name</div>
+              <div><span onclick="changeName(this)"><span id="fol" class="on" style="color: #0095f6">Follow</span><span id="req" class="off">Requested</span></span></div>
+            </div>
+            <div class="flexrow spcebtwn center suggestions">
+              <div class="storypic" style="width: 32px; height: 32px"></div>
+              <div>Name</div>
+              <div><span onclick="changeName(this)"><span id="fol" class="on" style="color: #0095f6">Follow</span><span id="req" class="off">Requested</span></span></div>
+            </div>
+            <div class="flexrow spcebtwn center suggestions">
+              <div class="storypic" style="width: 32px; height: 32px"></div>
+              <div>Name</div>
+              <div><span onclick="changeName(this)"><span id="fol" class="on" style="color: #0095f6">Follow</span><span id="req" class="off">Requested</span></span></div>
+            </div>
+           
+          </div>
+          </div>
+
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction(x, s) {
+      if (s == "heart") {
+        if (x.classList.contains("red")) {
+          x.classList.remove("fa-solid");
+        } else {
+          x.classList.add("fa-solid");
+        }
+        x.classList.toggle("red");
+      } else {
+        if (x.classList.contains("black")) {
+          x.classList.remove("fa-solid");
+        } else {
+          x.classList.add("fa-solid");
+        }
+        x.classList.toggle("black");
+      }
+    }
+    function changeName(x){
+      let y = x.firstChild;
+      let z = x.lastChild;
+      if(y.classList.contains("on")){
+        y.classList.toggle("off");
+        z.classList.toggle("off");
+      }else{
+        y.classList.toggle("on");
+        z.classList.toggle("on");
+      }
+    }
+  </script>
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+
+</html>

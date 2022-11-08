@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    line-height: 18px;
+}
+
+.container {
+    height: 935px;
+    display: flex;
+    margin: 32px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logform {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    height: 350px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insname {
+    width: 100%;
+    margin: 22px auto 12px;
+}
+
+.border {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.inp {
+    text-align: start;
+    width: 268px;
+    margin: 0 40px 6px;
+}
+
+input {
+    width: 260px;
+    height: 18px;
+    padding: 9px 0 7px 8px;
+}
+
+.btn {
+    margin-top: 6px !important;
+    border: transparent;
+    border-radius: 3px;
+    height: 30px;
+    color: white;
+    background-color: rgba(0, 149, 246, .3);
+    ;
+}
+
+.qwerty {
+    margin: 10px 40px 18px;
+    width: 268px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.ln {
+    position: relative;
+    background-color: #dbdbdb;
+    height: 1px;
+    -webkit-flex-grow: 1;
+    top: 0.45em;
+}
+
+.greyfnt {
+    margin: 0 18px;
+    color: #8e8e8e;
+}
+
+.logfb {
+    margin: 10px 40px 18px;
+    width: 268px;
+    height: 15px;
+    color: #385185;
+}
+
+.signup {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    height: 65px;
+}
+
+.dowapp img {
+    height: 40px;
+}
+
+.dowapp {
+    gap: 10px;
+    margin: 10px 0;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.phn {
+    width: 350px;
+    margin-right: 32px;
+}
+
+@media(min-width: 876px) {
+    .container {
+        width: 829px;
+    }
+}
+
+@media (max-width:875px) and (min-width:451px) {
+    .container {
+        width: 100%;
+    }
+
+    .phn {
+        display: none;
+    }
+
+    .cntr {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:450px) {
+    .container {
+        height: 806px;
+        width: 100%;
+    }
+
+    .phn {
+        display: none;
+    }
+
+    .cntr {
+        display: flex;
+        align-content: space-between !important;
+        justify-content: space-between;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logform,
+    .signup {
+        border: none;
+        background-color: transparent;
+    }
+}
